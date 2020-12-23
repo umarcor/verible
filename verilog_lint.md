@@ -161,7 +161,7 @@ Enabled by default: true
 ### generate-label-prefix
 Checks that every generate block label starts with g_ or gen_. See [Style: generate-constructs].
 
-Enabled by default: false
+Enabled by default: true
 
 ### interface-name-style
 Checks that `interface` names use lower_snake_case naming convention and end with '_if'. See [Style: interface-conventions].
@@ -330,4 +330,4 @@ Enabled by default: true
 
 ## Version
 
-Generated on 2020-12-08 19:00:20 -0500 from [5c34239](https://github.com/google/verible/commit/5c342396f15e6e0df787dc2ebc7a3986f8640706)
+Generated on 2020-12-22 00:12:29 -0800 from [137ec61](https://github.com/google/verible/commit/137ec610370bffc39caf795cc8c58c0b91c53a61)
