@@ -42,9 +42,10 @@ verible-verilog-lint: usage: bazel-bin/verilog/tools/lint/verible-verilog-lint [
       enables it, '-' disable it. Configuration values for each rules placed
       after '=' character.); default: ;
     --rules_config (Path to lint rules configuration file. Disables
-      --rule_config_search.); default: ".rules.verible_lint";
-    --rules_config_search (Look for lint rules configuration file, searching
-      upward from the location of each analyzed file.); default: false;
+      --rule_config_search if set.); default: "";
+    --rules_config_search (Look for lint rules configuration file
+      '.rules.verible_lint' searching upward from the location of each analyzed
+      file.); default: false;
     --ruleset ([default|all|none], the base set of rules used by linter);
       default: default;
     --waiver_files (Path to waiver config files (comma-separated). Please refer
@@ -173,6 +174,16 @@ Checks that no forbidden system tasks or functions are used. These consist of th
 
 Enabled by default: true
 
+### legacy-generate-region
+Checks that there are no generate regions. See [Style: generate-constructs].
+
+Enabled by default: false
+
+### legacy-genvar-declaration
+Checks that there are no separate `genvar` declarations. See [Style: generate-constructs].
+
+Enabled by default: false
+
 ### line-length
 Checks that all lines do not exceed the maximum allowed length. See [Style: line-length].
 ##### Parameters
@@ -290,6 +301,11 @@ Checks that `struct` and `union` names use lower_snake_case naming convention an
 
 Enabled by default: true
 
+### suggest-parentheses
+Recommend extra parentheses around subexpressions where it helps readability. See [Style: parentheses].
+
+Enabled by default: true
+
 ### typedef-enums
 Checks that a Verilog `enum` declaration is named using `typedef`. See [Style: typedef-enums].
 
@@ -330,4 +346,4 @@ Enabled by default: true
 
 ## Version
 
-Generated on 2020-12-22 00:12:29 -0800 from [137ec61](https://github.com/google/verible/commit/137ec610370bffc39caf795cc8c58c0b91c53a61)
+Generated on 2021-02-03 22:59:46 +0100 from [7de65ec](https://github.com/google/verible/commit/7de65ec3928225d47053306cf27bf6fe99ae459f)

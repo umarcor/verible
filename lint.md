@@ -103,6 +103,16 @@ Checks that no forbidden system tasks or functions are used. These consist of th
 
 Enabled by default: true
 
+### legacy-generate-region
+Checks that there are no generate regions. See [Style: generate-constructs].
+
+Enabled by default: false
+
+### legacy-genvar-declaration
+Checks that there are no separate `genvar` declarations. See [Style: generate-constructs].
+
+Enabled by default: false
+
 ### line-length
 Checks that all lines do not exceed the maximum allowed length. See [Style: line-length].
 ##### Parameters
@@ -220,6 +230,11 @@ Checks that `struct` and `union` names use lower_snake_case naming convention an
 
 Enabled by default: true
 
+### suggest-parentheses
+Recommend extra parentheses around subexpressions where it helps readability. See [Style: parentheses].
+
+Enabled by default: true
+
 ### typedef-enums
 Checks that a Verilog `enum` declaration is named using `typedef`. See [Style: typedef-enums].
 
@@ -260,4 +275,4 @@ Enabled by default: true
 
 ## Version
 
-Generated on 2020-12-22 00:12:29 -0800 from [137ec61](https://github.com/google/verible/commit/137ec610370bffc39caf795cc8c58c0b91c53a61)
+Generated on 2021-02-03 22:59:46 +0100 from [7de65ec](https://github.com/google/verible/commit/7de65ec3928225d47053306cf27bf6fe99ae459f)
