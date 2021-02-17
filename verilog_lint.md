@@ -83,7 +83,10 @@ Checks that there are no occurrences of non-blocking assignment in combinational
 Enabled by default: true
 
 ### always-ff-non-blocking
-Checks that there are no occurrences of blocking assignment in sequential logic.
+Checks that blocking assignments are, at most, targeting locals in sequential logic. See [Style: sequential-logic].
+##### Parameters
+  * `catch_modifying_assignments` Default: `false`
+  * `waive_for_locals` Default: `false`
 
 Enabled by default: true
 
@@ -146,6 +149,11 @@ Enabled by default: true
 
 ### forbid-defparam
 Do not use defparam. See:[Style: defparam].
+
+Enabled by default: true
+
+### forbid-line-continuations
+Checks that there are no occurrences of `'\'` when breaking the string literal line.Use concatenation operator with braces instead. See [Style: forbid-line-continuations].
 
 Enabled by default: true
 
@@ -346,4 +354,4 @@ Enabled by default: true
 
 ## Version
 
-Generated on 2021-02-04 18:59:02 -0800 from [9823bfc](https://github.com/google/verible/commit/9823bfcb81dd47bcb856dd9b648a274f3efe229a)
+Generated on 2021-02-17 08:23:50 -0800 from [e00f69f](https://github.com/google/verible/commit/e00f69f386469fc51df15eb548a2ab7562d41ee6)
