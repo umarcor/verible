@@ -68,6 +68,8 @@ verible-verilog-lint: usage: bazel-bin/verilog/tools/lint/verible-verilog-lint [
       default: true;
     --parse_fatal (If true, exit nonzero if there are any syntax errors.);
       default: true;
+    --show_diagnostic_context (prints an additional line on which the diagnostic
+      was found,followed by a line with a position marker); default: false;
 ```
 
 ## Lint Rules
@@ -153,7 +155,7 @@ Do not use defparam. See:[Style: defparam].
 Enabled by default: true
 
 ### forbid-line-continuations
-Checks that there are no occurrences of `'\'` when breaking the string literal line.Use concatenation operator with braces instead. See [Style: forbid-line-continuations].
+Checks that there are no occurrences of `'\'` when breaking the string literal line. Use concatenation operator with braces instead. See [Style: forbid-line-continuations].
 
 Enabled by default: true
 
@@ -354,4 +356,4 @@ Enabled by default: true
 
 ## Version
 
-Generated on 2021-02-24 12:04:02 -0800 from [6a222b2](https://github.com/google/verible/commit/6a222b22a6cfd3ea473a0fd7c33e0bf712602390)
+Generated on 2021-03-31 17:08:05 +0200 from [19d0bf0](https://github.com/google/verible/commit/19d0bf0ac33e6fa2ebbd0f5e50671fcaa280cfa6)
