@@ -39,6 +39,11 @@ Checks that the 'name' argument of `type_id::create()` matches the name of the v
 
 Enabled by default: true
 
+### disable-statement
+Checks that there are no occurrences of `disable some_label` if label is referring to a fork or other none sequential block label.. Use `disable fork` instead. See [Style: disable-invalid-in-non-sequential].
+
+Enabled by default: false
+
 ### endif-comment
 Checks that a Verilog `` `endif`` directive is followed by a comment that matches the name of the opening `` `ifdef`` or `` `ifndef``. See [Style: endif-comment].
 
@@ -132,6 +137,11 @@ Enabled by default: true
 Checks that every macro name follows ALL_CAPS naming convention.  Exception: UVM-like macros.  See [Style: defines].
 
 Enabled by default: true
+
+### macro-string-concatenation
+Concatenation will not be evaluated here. Use `"...`" instead. See [Style: defines].
+
+Enabled by default: false
 
 ### mismatched-labels
 Labels mismatch. See:[Style: mismatched-labels].
@@ -240,6 +250,9 @@ Enabled by default: false
 
 ### struct-union-name-style
 Checks that `struct` and `union` names use lower_snake_case naming convention and end with '_t'. See [Style: struct-union-conventions].
+##### Parameters
+ * `exceptions` (Comma-separated list of allowed upper-case elements, such as unit-names. Default: Empty)
+
 
 Enabled by default: true
 
@@ -288,4 +301,4 @@ Enabled by default: true
 
 ## Version
 
-Generated on 2021-04-01 13:00:54 -0700 from [eea40a0](https://github.com/google/verible/commit/eea40a00e566e766ffafc6f768657ba32b2c4f2e)
+Generated on 2021-07-08 15:25:19 -0700 from [27add07](https://github.com/google/verible/commit/27add072b540542946910f148aca51991336b1d1)

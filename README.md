@@ -4,10 +4,10 @@
 # Verible
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Continuous Integration](../../workflows/verible-ci/badge.svg)](../../actions/workflows/verible-ci.yml)
+[![Continuous Integration](https://github.com/chipsalliance/verible/workflows/verible-ci/badge.svg)](https://github.com/chipsalliance/verible/actions/workflows/verible-ci.yml)
 
 <!--*
-freshness: { owner: 'fangism' reviewed: '2020-10-08' }
+freshness: { owner: 'hzeller' reviewed: '2020-10-08' }
 *-->
 
 The Verible project's main mission is to parse SystemVerilog (IEEE 1800-2017)
@@ -42,8 +42,8 @@ guide and the [development resources](./doc/development.md).
 
 Verible's code base is written in C++.
 
-To build, you need the [bazel] build system and a C++11 compatible compiler
-(e.g. >= g++-7; Using clang currently fails to compile the m4 dependency).
+To build, you need the [bazel] build system and a C++17 compatible compiler
+(e.g. >= g++-9).
 
 ```bash
 # Build all tools and libraries
@@ -141,7 +141,7 @@ Features (various degress of work-in-progress):
 
 <!--
 TODO(fangism): a demo GIF animation here.
-See https://github.com/google/verible/issues/528
+See https://github.com/chipsalliance/verible/issues/528
 -->
 
 ### Lexical Diff
@@ -166,7 +166,7 @@ potentially sensitive test cases with tool vendors.
 
 <!--
 TODO(fangism): a short demo GIF animation here.
-See https://github.com/google/verible/issues/528
+See https://github.com/chipsalliance/verible/issues/528
 -->
 
 ### Preprocessor
@@ -198,4 +198,4 @@ abstract syntax tree (AST). If you are interested in collaborating, contact us.
 [lint-rule-list_enum-name-style]: https://google.github.io/verible/lint.html#enum-name-style
 [lint-rule-list_line-length]: https://google.github.io/verible/lint.html#line-length
 [lint-rule-list_no-tabs]: https://google.github.io/verible/lint.html#no-tabs
-[binary releases]: https://github.com/google/verible/releases
+[binary releases]: https://github.com/chipsalliance/verible/releases
